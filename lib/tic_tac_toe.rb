@@ -94,12 +94,8 @@ class TicTacToe
     end 
   end 
   
-  def play
-   turn until over?
-   if winner
-     puts "Congradulations #{winner}!"
-    else 
-      puts "it ended in a draw"
-    end 
-  end 
+  def play 
+    turn until over?
+    puts winner ? "Congradulations #{winner}!" : "Cat's Game!"
+  
 end 
