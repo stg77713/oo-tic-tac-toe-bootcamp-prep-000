@@ -77,7 +77,7 @@ class TicTacToe
   
   def full?
     # remember to use .all and iterate 
-    @board.all?{|x| x == "X" || x == "O"}
+    @board.all?{|x| x != " " }
   end 
   
   def draw?
